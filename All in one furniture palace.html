@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Beds</title>
+  <link rel="stylesheet" href="all in one.css">
+  <script>src="cart.js"</script>
+  <script>
+    // Get all the navigation links
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // Add a click event listener to each link
+    for (let i = 0; i < navLinks.length; i++) {
+      navLinks[i].addEventListener('click', function() {
+        // Get the href attribute of the link
+        const href = this.getAttribute('href');
+
+        // Scroll to the section with the corresponding id
+        window.scrollTo(0, document.querySelector(href).offsetTop);
+      });
+    }
+  </script>
+
+</head>
+<body>
+  <div class="account-button">
+    <a href="account.html">account</a>
+  </div>
+    <!--header-->
+    <h1>WELCOME TO FURNITURE PALACE KE</h1>
+    <h2>YOUR ONESTOP FURNITURE STORE</h2>
+    <br>
+    <br>
+    <!--Navgaton bar-->
+    <div>
+      <nav>
+        <ul>
+          <li><a href="#Beds"><button class="nav-link">Beds</button></a></li>
+          <li><a href="#Sofa"><button class="nav-link">Sofa</button></a></li>
+          <li><a href="#Coat Hanger"><button class="nav-link">Coat Hanger</button></a></li>
+          <li><a href="#Dinnig Table"><button class="nav-link">Dinnig Table</button></a></li>
+          <li><a href="#Kitchen"><button class="nav-link">Kitchen </button></a></li>
+          <li><a href="#School work"><button class="nav-link">school work</button></a></li>
+          <li><a href="#Outdoor"><button class="nav-link">Outdoor</button></a></li>
+          <li><a href="#Cart"><button class="nav-link c-button">Cart</button></a></li>
+        </ul>
+      </nav>
+  
+    </div>
+    <!-- End of navgaton-->
+    <header>
+        <div class="discount-bar">
+            <p class="discount">Get upto 30% off on the available Furniture</p>
+            <a href="discount.html" target="_blank"><button class="discount-button">Buy Now</button></a>
+            <img src="beds/B3.jpg" alt="Woman with bags" class="discount-img">
+        </div>
+      </header>
+      <br>
+      <br>
+      <br>
+      <br>
+    <!--end of header-->
+    <!--start of beds-->
+<div id="columns" class="columns_5">
+ <div>
+  <section id="Beds">
+	<figure class="furn">
+    <img src="Beds/B2.jpg">
+    <figcaption>Green and Black Flowers</figcaption>
+    <p class="currency">Ksh</p>
+    <span class="price">60000</span>
+    <button type="button" class="add-to-cart-button" data-product-id="B002">Add to Cart</button>
+</figure>
+	
+<figure class="furn">
+  <img src="Beds/B3.jpg">
+  <figcaption>Black Dots</figcaption>
+  <p class="currency">Ksh</p>
+  <span class="price">70000</span>
+  <button type="button" class="add-to-cart-button" data-product-id="B003">Add to Cart</button>
+</figure>
+  
+	<figure class="furn">
+	<img src="Beds/B4.jpg">
+	<figcaption>Red Flowy</figcaption>
+  <p class="currency">Ksh</p>
+    <span class="price">70000</span>
+    <button type="button" class="add-to-cart-button" data-product-id="B004" >Add to Cart</button>
+	</figure>
+	
+  <figure class="furn">
+    <img src="Beds/B5.jpg">
+    <figcaption>Yellow Button-Up</figcaption>
+    <p class="currency">Ksh</p>
+    <span class="price">80000</span>
+    <button type="button" class="add-to-cart-button" data-product-id="B005">Add to Cart</button>
+</figure>
+	
+   <figure class="furn">
+	 <img src="Beds/B6.jpg">
+	<figcaption>Put a Bird On It</figcaption>
+  <p class="currency">Ksh</p>
+     <span class="price">90000</span>
+      <button type="button" class="add-to-cart-button" data-product-id="B006" >Add to Cart</button>
+	</figure>
+</section>
+      </div>
+      <!--End of beds-->
+      <br>
+      <br>
+      <br>
+      <br>
+      <!--Start of sofas-->
+      <section id="Sofa">
+      <div>
+        <figure class="furn">
+          <img src="sofa/S1.jpg">
+          <figcaption>Put a Bird On It</figcaption>
+          <p class="currency">Ksh</p>
+          <span class="price">90000</span>
+          <button type="button" class="add-to-cart-button" data-product-id="S001">Add to Cart</button>
+      </figure>
+        
+      <figure class="furn">
+        <img src="sofa/S2.jpg">
+        <figcaption>Comfy starts in your living room</figcaption>
+        <p class="currency">Ksh</p>
+        <span class="price">84000</span>
+        <button type="button" class="add-to-cart-button" data-product-id="S002">Add to Cart</button>
+    </figure>
+        
+    <figure class="furn">
+      <img src="sofa/S3.jpg">
+      <figcaption>Heads up for good living</figcaption>
+      <p class="currency">Ksh</p>
+      <span class="price">95000</span>
+      <button type="button" class="add-to-cart-button" data-product-id="S003">Add to Cart</button>
+  </figure>
+        
+  <figure class="furn">
+    <img src="sofa/S4.jpg">
+    <figcaption>Create your imagination</figcaption>
+    <p class="currency">Ksh</p>
+    <span class="price">72000</span>
+    <button type="button" class="add-to-cart-button" data-product-id="S004">Add to Cart</button>
+</figure>
+        
+<figure class="furn">
+  <img src="sofa/S5.jpg">
+  <figcaption>Relax in luxury</figcaption>
+  <p class="currency">Ksh</p>
+  <span class="price">77000</span>
+  <button type="button" class="add-to-cart-button" data-product-id="S005">Add to Cart</button>
+</figure>
+</div>
+</section>
+<!-- End of Sofas-->
+<br>
+<br>
+          <!--Start of coat hanger-->
+          <section id="Coat Hanger">
+          <div>
+            <figure class="furn">
+            <img src="Coat Hanger/C2.jpg">
+            <figcaption>Three Coats can be hanged</figcaption>
+            <p class="currency">Ksh</p>
+              <span class="price">4000</span>
+              <button type="button" class="add-to-cart-button" data-product-id="C002" >Add to Cart</button>
+            </figure>
+            
+            <figure class="furn">
+            <img src="Coat Hanger/C3.jpg">
+            <figcaption>Stand Coat Hanger</figcaption>
+            <p class="currency">Ksh</p>
+              <span class="price">4500</span>
+              <button type="button" class="add-to-cart-button" data-product-id="C003" >Add to Cart</button>
+            </figure>
+            
+            <figure class="furn">
+            <img src="Coat Hanger/C4.jpg">
+            <figcaption>Three pairs </figcaption>
+            <p class="currency">Ksh</p>
+              <span class="price">2000</span>
+              <button type="button" class="add-to-cart-button" data-product-id="C004" >Add to Cart</button>
+            </figure>
+            
+             <figure class="furn">
+             <img src="Coat Hanger/C5.jpg">
+            <figcaption>Five Pairs</figcaption>
+            <p class="currency">Ksh</p>
+              <span class="price">1000</span>
+              <button type="button" class="add-to-cart-button" data-product-id="C005" >Add to Cart</button>
+            </figure>
+            
+             <figure class="furn">
+             <img src="Coat Hanger/C6.jpg">
+            <figcaption>Six pairs</figcaption>
+            <p class="currency">Ksh</p>
+               <span class="price">1500</span>
+               <button type="button" class="add-to-cart-button" data-product-id="C006" >Add to Cart</button>
+            </figure>
+            
+                </div>
+              </section>
+                <!--End of Coat hanger-->
+                <br>
+                <br>
+                <br>
+                <br>
+                <!--Start of Dinning Table-->
+                <section id="Dinning Table">
+                <div>
+                  <figure class="furn">
+                  <img src="Dinnig Table/D1.jpg">
+                    <figcaption>Enjoy your meals</figcaption>
+                    <p class="currency">Ksh</p>
+                    <span class="price">25000</span>
+                    <button type="button" class="add-to-cart-button" data-product-id="Doo1" >Add to Cart</button>
+                    </figure>
+                    
+                    <figure class="furn">
+                    <img src="Dinnig Table/D2.jpg">
+                    <figcaption>Feast like a king</figcaption>
+                    <p class="currency">Ksh</p>
+                    <span class="price">38000</span>
+                    <button type="button" class="add-to-cart-button" data-product-id="D002" >Add to Cart</button>
+                    </figure>
+                    
+                  <figure class="furn">
+                    <img src="Dinnig Table/D3.jpg">
+                    <figcaption>Fuel your appetite</figcaption>
+                    <p class="currency">Ksh</p>
+                    <span class="price">45000</span>
+                    <button type="button" class="add-to-cart-button" data-product-id="D003" >Add to Cart</button>
+                    </figure>
+                  
+                    <figure class="furn">
+                    <img src="Dinnig Table/D4.jpg">
+                    <figcaption>Feast on it</figcaption>
+                    <p class="currency">Ksh</p>
+                    <span class="price">26000</span>
+                    <button type="button" class="add-to-cart-button" data-product-id="D004" >Add to Cart</button>
+                    </figure>
+                    
+                   <figure class="furn">
+                     <img src="Dinnig Table/D5.jpg">
+                    <figcaption>work from it</figcaption>
+                    <p class="currency">Ksh</p>
+                    <span class="price">56000</span>
+                    <button type="button" class="add-to-cart-button" data-product-id="D005" >Add to Cart</button>
+                    </figure>
+
+                </div>
+                </section>
+                <!--End of dinning table-->
+                <br>
+                <br>
+                <br>
+                <br>
+                <!--Start of Dressing table-->
+                <section id="Dressing Table"
+                <div>
+                  <figure class="furn">
+                    <img src="Dressing Table/D2.jpg">
+                    <figcaption>See yourself before others do</figcaption>
+                    <p class="currency">Ksh</p>
+                      <span class="price">22000</span>
+                      <button type="button" class="add-to-cart-button" data-product-id="DT002" >Add to Cart</button>
+                    </figure>
+                      
+                    <figure class="furn">
+                      <img src="Dressing Table/D3.jpg">
+                      <figcaption>Dress well feel great</figcaption>
+                      <p class="currency">Ksh</p>
+                        <span class="price">25000</span>
+                        <button type="button" class="add-to-cart-button" data-product-id="DT003" >Add to Cart</button>
+                      </figure>
+                      
+                      <figure class="furn">
+                        <img src="Dressing Table/D4.jpg">
+                        <figcaption>Be outstanding</figcaption>
+                        <p class="currency">Ksh</p>
+                          <span class="price">12000</span>
+                          <button type="button" class="add-to-cart-button" data-product-id="DT004" >Add to Cart</button>
+                        </figure>
+                    
+                        <figure class="furn">
+                          <img src="Dressing Table/D5.jpg">
+                          <figcaption>Share your fashion</figcaption>
+                          <p class="currency">Ksh</p>
+                            <span class="price">14000</span>
+                            <button type="button" class="add-to-cart-button" data-product-id="DT005" >Add to Cart</button>
+                          </figure>
+                      
+                          <figure class="furn">
+                            <img src="Dressing Table/D6.jpg">
+                            <figcaption>Show them your designer</figcaption>
+                            <p class="currency">Ksh</p>
+                              <span class="price">19000</span>
+                              <button type="button" class="add-to-cart-button" data-product-id="DT006" >Add to Cart</button>
+                            </figure>
+
+                            </div>
+                          </section>
+                    <!--End of Dressing Table-->
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <!--Start of kitchen-->
+                    <div id="columns" class="columns_5">
+                      <div>
+                       <section id="Kitchen">
+                       <figure class="furn">
+                        <img src="Kitchen/K1.jpg">
+                        <figcaption>Be comfy</figcaption>
+                        <p class="currency">Ksh</p>
+                          <span class="price">6000</span>
+                          <button type="button" class="add-to-cart-button" data-product-id="K001" >Add to Cart</button>
+                        </figure>
+                          
+                        <figure class="furn">
+                          <img src="Kitchen/K2.jpg">
+                          <figcaption>Elegancy all time</figcaption>
+                          <p class="currency">Ksh</p>
+                            <span class="price">5000</span>
+                            <button type="button" class="add-to-cart-button" data-product-id="K002" >Add to Cart</button>
+                          </figure>
+                          
+                          <figure class="furn">
+                            <img src="Kitchen/K3.jpg">
+                            <figcaption>Enjoy your cooking time</figcaption>
+                            <p class="currency">Ksh</p>
+                              <span class="price">5500</span>
+                              <button type="button" class="add-to-cart-button" data-product-id="K003" >Add to Cart</button>
+                            </figure>
+                        
+                            <figure class="furn">
+                              <img src="Kitchen/K4.jpg">
+                              <figcaption>Be a super chef</figcaption>
+                              <p class="currency">Ksh</p>
+                                <span class="price">5000</span>
+                                <button type="button" class="add-to-cart-button" data-product-id="K004" >Add to Cart</button>
+                              </figure>
+                          
+                              <figure class="furn">
+                                <img src="Kitchen/K5.jpg">
+                                <figcaption>cook as you Ejoy</figcaption>
+                                <p class="currency">Ksh</p>
+                                  <span class="price">6000</span>
+                                  <button type="button" class="add-to-cart-button" data-product-id="K005" >Add to Cart</button>
+                                </figure>
+                                </section>
+                        </div>
+                        <!--End of Kitchen-->
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <!--Start of Outdoor-->
+                        <div id="columns" class="columns_5">
+                          <div>
+                           <section id="Outdoor">
+                           <figure class="furn">
+                            <img src="Outdoor/O1.jpg">
+                            <figcaption>Nature at its finest</figcaption>
+                            <p class="currency">Ksh</p>
+                              <span class="price">5600</span>
+                              <button type="button" class="add-to-cart-button" data-product-id="O001" >Add to Cart</button>
+                          </figure>
+                              
+                          <figure class="furn">
+                            <img src="Outdoor/O2.jpg">
+                            <figcaption>Be one with the environment</figcaption>
+                            <p class="currency">Ksh</p>
+                              <span class="price">32000</span>
+                              <button type="button" class="add-to-cart-button" data-product-id="O002" >Add to Cart</button>
+                          </figure>
+                              
+                          <figure class="furn">
+                            <img src="Outdoor/O3.jpg">
+                            <figcaption>Enjoy the outdoor breeze</figcaption>
+                            <p class="currency">Ksh</p>
+                              <span class="price">45000</span>
+                              <button type="button" class="add-to-cart-button" data-product-id="O003" >Add to Cart</button>
+                          </figure>
+                            
+                          <figure class="furn">
+                            <img src="Outdoor/O4.jpg">
+                            <figcaption>Vitamin D is good for your health</figcaption>
+                            <p class="currency">Ksh</p>
+                              <span class="price">28000</span>
+                              <button type="button" class="add-to-cart-button" data-product-id="O004" >Add to Cart</button>
+                          </figure>
+                              
+                              
+                          <figure class="furn">
+                            <img src="Outdoor/O5.jpg">
+                            <figcaption>Count the stars</figcaption>
+                            <p class="currency">Ksh</p>
+                              <span class="price">26000</span>
+                              <button type="button" class="add-to-cart-button" data-product-id="O005" >Add to Cart</button>
+                          </figure>
+                          </section>
+                        </div>
+                            <!--End of outdoor-->
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <!--Start of School work-->
+                            <div id="columns" class="columns_5">
+                              <div>
+                               <section id="School work">
+                               <figure class="furn">
+                              <img src="school work/S1.jpg">
+                              <figcaption>Improve your knowledge</figcaption>
+                              <p class="currency">Ksh</p>
+                                <span class="price">3000</span>
+                                <button type="button" class="add-to-cart-button" data-product-id="SC001" >Add to Cart</button>
+                            </figure>
+                                  
+                            <figure class="furn">
+                              <img src="school work/S2.jpg">
+                              <figcaption>Improve your knowledge</figcaption>
+                              <p class="currency">Ksh</p>
+                                <span class="price">4600</span>
+                                <button type="button" class="add-to-cart-button" data-product-id="SC002" >Add to Cart</button>
+                            </figure>
+                                  
+                            <figure class="furn">
+                              <img src="school work/S3.jpg">
+                              <figcaption>Improve your knowledge</figcaption>
+                              <p class="currency">Ksh</p>
+                                <span class="price">3500</span>
+                                <button type="button" class="add-to-cart-button" data-product-id="SC003" >Add to Cart</button>
+                            </figure>
+                                
+                            <figure class="furn">
+                              <img src="school work/S4.jpg">
+                              <figcaption>Improve your knowledge</figcaption>
+                              <p class="currency">Ksh</p>
+                                <span class="price">6600</span>
+                                <button type="button" class="add-to-cart-button" data-product-id="SC004" >Add to Cart</button>
+                            </figure>
+                                  
+                            <figure class="furn">
+                              <img src="school work/S5.jpg">
+                              <figcaption>Improve your knowledge</figcaption>
+                              <p class="currency">Ksh</p>
+                                <span class="price">7500</span>
+                                <button type="button" class="add-to-cart-button" data-product-id="SC005" >Add to Cart</button>
+                            </figure>
+                            </section>
+                            </div>
+                               <!--End of School work-->
+                                </div>
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <!--start of cart-->
+                                <section id="Cart">
+                                <div class="cart-list">
+                                    <div class="cart-listing">
+                                        <h1 class="name-cart">Cart</h1>
+                                        <table class="cart-table">
+                                          <thead>
+                                            <tr>
+                                              <th>Product Id</th>
+                                              <th>Image</th>
+                                              <th>Description</th>
+                                              <th>Price (Ksh)</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody id="cart-table-body">
+                                            </tbody>
+                                        </table>
+                                        <div class="cart-total">
+                                          <h3><u>Total: <span id="total-price">Ksh 0</span></u></h3>
+                                          <div class="container">
+                                            <button type="button" class="checkout">
+                                              <a href="delivery.html">Checkout</a>
+                                            </button>
+                                            </div>
+
+                                          </div>
+                                        
+                                         </div>
+                                   </div>
+                                </section>
+                              </div>
+                                    <!--Footer-->
+                                    <footer>
+                                      <div class="footer-content">
+                                        <p>&copy; 2023 Furniture palace.Ke</p>
+                                        <ul>
+                                          <li><a href="privacy.html">Privacy Policy</a></li>
+                                          <li><a href="terms.html">Terms of Service</a></li>
+                                        </ul>
+                                      </div>
+                                    
+                                      <div class="modal fade" id="contactUsModal" tabindex="-1" aria-labelledby="contactUsModalLabel" aria-hidden="true">
+   
+                                    <div class="modal-dialog">
+                                     <div class="modal-content">
+                                     <div class="modal-header">
+                                    <h5class="modal-title"
+                                     
+                                    id="contactUsModalLabel">Contact Us</h5>
+                                    
+                                     
+                                             
+                                    <button type="button"  class="btn-close" data-bs-dismiss="modal" ></button>                                    
+     
+                                <div class="modal-body">
+                                    
+                                              
+                                    <p>Email: <a href="mailto:info@furniturepalace.ke">info@furniturepalace.ke</a></p>
+                                    <p>Phone: <a href="tel:+254714708998">+254 714708998</a></p>
+                                   </div>
+                                 <div class="modal-footer">
+                                            
+                                    </div>
+                                    
+                                          
+                                    </div>
+                                    
+                                    </footer>
+
+                                  <!--Js-->
+                                    <script>
+                                      const cartTable = document.querySelector('#cart-table-body');
+                                const addToCartButtons = document.querySelectorAll('.add-to-cart-button');
+                                const checkoutButton = document.querySelector('.checkout');
+
+                                let totalPrice = 0;
+
+                                addToCartButtons.forEach(button => {
+                                button.addEventListener('click', function() {
+                                  // Get the product information
+                                  const productId = this.getAttribute('data-product-id');
+                                  const productName = this.closest('figure').querySelector('figcaption').textContent;
+                                  const productPrice = parseFloat(this.closest('figure').querySelector('.price').textContent);
+                                  const productImg = this.closest('figure').querySelector('img').src;
+
+                                  // Add the product to the cart
+                                  const newCartRow = document.createElement('tr');
+                                  newCartRow.setAttribute('id', `row-${Math.random()}`);
+                                  newCartRow.innerHTML = `
+                                    <td>${productId}</td>
+                                    <td><img src="${productImg}" alt="${productName}"></td>
+                                    <td>${productName}</td>
+                                    <td>${productPrice}</td>
+                                    
+                                  `;
+
+                                  cartTable.appendChild(newCartRow);
+
+                                  // Update the total price
+                                  updateTotalPrice();
+
+                                  // Add the product to the cart in local storage
+                                  const cartItems = JSON.parse(localStorage.getItem('cartItems') || '[]');
+                                  cartItems.push({
+                                    id: productId,
+                                    name: productName,
+                                    price: productPrice,
+                                    quantity: 1,
+                                  });
+
+                                  localStorage.setItem('cartItems', JSON.stringify(cartItems));
+                                });
+                                });
+
+                                removeFromCartButtons.forEach(button => {
+                                button.addEventListener('click', function() {
+                                  // Get the cart row ID
+                                  const cartRowId = this.getAttribute('data-cart-row-id');
+
+                                  // Remove the cart row
+                                  cartTable.removeChild(document.querySelector(`#${cartRowId}`));
+
+                                  // Update the total price
+                                  updateTotalPrice();
+
+                                  // Remove the product from the cart in local storage
+                                  const cartItems = JSON.parse(localStorage.getItem('cartItems') || '[]');
+                                  const cartItemIndex = cartItems.findIndex(item => item.id === cartRowId);
+
+                                  if (cartItemIndex !== -1) {
+                                    cartItems.splice(cartItemIndex, 1);
+                                  }
+
+                                  localStorage.setItem('cartItems', JSON.stringify(cartItems));
+                                });
+                                });
+
+                                checkoutButton.addEventListener('click', function() {
+                                // TODO: Implement code to process the payment and generate the order confirmation.
+
+                                // Once the checkout process is complete, redirect the user to the checkout confirmation page.
+                                window.location.href = '/checkout-confirmation';
+                                });
+
+                                function updateTotalPrice() {
+                                // Reset the total price
+                                totalPrice = 0;
+
+                                // Iterate over the cart rows and add the price of each item to the total price
+                                const cartRows = document.querySelectorAll('#cart-table-body tr');
+                                cartRows.forEach(row => {
+                                  const price = parseFloat(row.querySelector('td:nth-child(4)').textContent);
+                                  totalPrice += price;
+                                });
+
+                                // Display the total price
+                                const totalPriceDisplay = document.querySelector('#total-price');
+                                totalPriceDisplay.textContent = `ksh ${totalPrice.toFixed(0)}`;
+                                }
+
+                                // Add a resize event listener to the window
+                                window.addEventListener('resize', updateTotalPrice);
+
+                                  </script>
+                                  
+
+                                </body>
+                                </html>

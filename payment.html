@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <style>   
+        body { background-color: rgb(184, 190, 192); }
+    </style>
+</head>
+<body>
+    <center>
+        <form style="padding-top: 150px;" action="#" method="POST" id="paymentForm">
+            <fieldset style="width: 500px; height: 500px; background-color: white;">
+                <label style="padding-top: 20px; color: rgb(68, 153, 192);">Payment</label>
+                <br><br>
+                <br>
+                <br>
+                <input type="text" name="Country" id="Country" placeholder="Country" >
+                <br><br>
+                <input type="text" name="address" id="address" placeholder="Address" >
+                <br>
+                <br>
+                <input type="tel" name="phone_number" id="phone_number" placeholder="Enter phone number" >
+                <br><br>
+                <button class="btn" style="color: white; background-color: rgb(57, 57, 61);" type="button" onclick="makePayment()">
+                    Order
+                </button>
+                <div id="payment-success" style="display: none;">
+                    <h1>Order Recived!</h1>
+                    <p>Thank you for shopping with us. Your order has been processed and will be shipped shortly.</p>
+                    <img src="tick.jpg" width="20%" height="20%" >
+                </div>
+            </fieldset>
+        </form>
+    </center>
+
+    <script>
+        function makePayment() {
+
+            setTimeout(function() {
+                document.getElementById('payment-success').style.display = 'block';
+            }, 2000); 
+        }
+    </script>
+</body>
+</html>

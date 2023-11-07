@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Accept a payment</title>
+    <meta name="description" content="A demo of a payment on Stripe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="delivery.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="#" defer></script>
+    <script src="https://js.stripe.com/v3/"></script>
+<script>
+    var stripe = Stripe('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+</script>
+
+  </head>
+  <body>
+    <!-- Display a payment form -->
+    <form action="che.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone number:</label>
+      <input type="text" id="phone" name="phone" required>
+
+      <label for="address">Shipping Address:</label>
+      <textarea id="address" name="address" required></textarea>
+
+      <label for="card">Credit Card:</label>
+      <input type="text" id="card" name="card" placeholder="1234 5678 9012 3456" required>
+
+      <label for="exp">Expiration Date:</label>
+      <input type="text" id="exp" name="exp" placeholder="MM/YY" required>
+
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" name="cvv" placeholder="123" required>
+
+      <div class="container">
+        <button type="button" class="Place Ordert">
+          <a href="payment.html">Place Order</a>
+        </button>
+      </div>
+  </form>
+
+  <script>
+    var form = document.getElementById('payment-form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        stripe.createToken(card).then(function(result) {
+            if (result.error) {
+                // Show any errors to the customer.
+                var errorElement = document.getElementById('card-errors');
+                errorElement.textContent = result.error.message;
+            } else {
+                // Token is created. You can send it to your server to complete the payment.
+                var token = result.token;
+                // You can send the token to your server for processing.
+            }
+        });
+    });
+</script>
+
+  </body>
+</html>
